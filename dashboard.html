@@ -3,8 +3,7 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Model Performance Dashboard</title>
+        <title>Advanced Model Dashboard</title>
         <style>
             body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 0; }
             header { background-color: #2c3e50; color: white; padding: 1.5rem 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
@@ -16,52 +15,39 @@
             .metric-card p { margin: 0; font-size: 2.5rem; font-weight: bold; color: #2c3e50; }
             .plots { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 2rem; }
             .plot-card { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-            .plot-card h2 { margin-top: 0; color: #2c3e50; text-align: center; border-bottom: 2px solid #ecf0f1; padding-bottom: 0.5rem; }
             .plot-card img { width: 100%; height: auto; border-radius: 4px; }
             .footer { text-align: center; padding: 2rem; margin-top: 2rem; color: #7f8c8d; font-size: 0.9rem; }
         </style>
     </head>
     <body>
         <header>
-            <h1>Traffic Demand Prediction - Performance Dashboard</h1>
-            <p>Leakage-Free XGBoost, LightGBM, and CatBoost Ensemble</p>
+            <h1>Advanced Traffic Demand Forecast</h1>
+            <p>Leakage-Free, Spatio-Temporal Interaction Ensemble (R² optimized)</p>
         </header>
-        
         <div class="container">
             <div class="metrics">
                 <div class="metric-card">
                     <h3>Overall R² Score</h3>
-                    <p>0.9282</p>
+                    <p>0.9497</p>
                 </div>
                 <div class="metric-card">
-                    <h3>Number of Features</h3>
-                    <p>12</p>
-                </div>
-                <div class="metric-card">
-                    <h3>Validation Samples</h3>
-                    <p>77299</p>
+                    <h3>Features Engineered</h3>
+                    <p>17</p>
                 </div>
             </div>
-            
             <div class="plots">
                 <div class="plot-card">
-                    <h2>Actual vs. Predicted</h2>
                     <img src="dashboard_assets/actual_vs_predicted.png" alt="Actual vs Predicted">
                 </div>
                 <div class="plot-card">
-                    <h2>Residual Error Distribution</h2>
                     <img src="dashboard_assets/residuals.png" alt="Residuals">
                 </div>
                 <div class="plot-card" style="grid-column: 1 / -1; max-width: 800px; margin: 0 auto; width: 100%;">
-                    <h2>CatBoost Feature Importances</h2>
                     <img src="dashboard_assets/feature_importance.png" alt="Feature Importance">
                 </div>
             </div>
         </div>
-        
-        <div class="footer">
-            &copy; 2026 AI/ML System. Powered by CatBoost, LightGBM & XGBoost.
-        </div>
+        <div class="footer">&copy; 2026 AI/ML System</div>
     </body>
     </html>
     
